@@ -15,3 +15,10 @@ console.log (values);
 // Entries
 const pair = Object.entries (bottle);
 console.log (pair);
+// Delete
+delete bottle.Mineral;
+console.log(bottle);
+// Seal
+Object.seal(bottle);
+delete bottle.Quantity;
+console.log(bottle);
