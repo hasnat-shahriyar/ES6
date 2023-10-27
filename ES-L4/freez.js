@@ -12,3 +12,6 @@ console.log (keys);
 // Values
 const values = Object.values(bottle);
 console.log (values);
+// Entries
+const pair = Object.entries (bottle);
+console.log (pair);
