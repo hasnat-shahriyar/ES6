@@ -26,3 +26,12 @@ class Person { // Define a class named 'Person'.
 
 const person1 = new Person(19); // Create a new 'Person' object, 'person1', with an 'age' of 19.
 console.log(person1); // Print the 'person1' object and its properties to the console.
+
+// Using Function 
+function Car (model, price){
+    this.Model = model;
+    this.Price = price;
+}
+
+const honda = new Car ("Honda Civic 2023", 5200000);
+console.log (honda);
