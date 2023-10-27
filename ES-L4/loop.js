@@ -19,3 +19,10 @@ const keys = Object.keys(bottle);
 for (const key of keys){
     console.log (key);
 }
+
+console.log ("")
+
+// "for in" loop
+for (const key in bottle){
+    console.log (key);
+}
