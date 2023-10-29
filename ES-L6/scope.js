@@ -1,4 +1,4 @@
-// Block scope global scope simple understanding of Hoisting
+// Block scope, global scope, and understanding of hoisting.
 
 function add(a, b) {
     // Inside the function, we create a new variable 'total' and set it to the result of multiplying 'a' and 'b'.
@@ -6,6 +6,13 @@ function add(a, b) {
 
     // We then log the values of 'a' and 'b' to the console, so you can see what values were passed to the function.
     console.log(a, b);
+
+    // if (b > 5) {
+    //     const sum = 25 + a + b; // 'sum' is defined within the 'if' block.
+    // }
+    // If I uncomment the following line, it will result in an error:
+    // console.log(sum); // 'sum' is not accessible outside the 'if' block.
+    // 'sum' cannot be accessed here because it's out of scope.
 
     // Finally, we return the value of 'total' as the result of the function.
     return total;
