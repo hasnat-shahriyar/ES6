@@ -1,4 +1,7 @@
 console.log (1);
+setTimeout(() => {
+    console.log ("I am late for 4 second")
+}, 4000);
 console.log (2);
 doSomething ();
 console.log (4);
