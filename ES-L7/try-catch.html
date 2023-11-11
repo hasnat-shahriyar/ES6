@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind Example</title>
+    <!-- Linking to the Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="text-center mt-16">
+        <header>
+            <h1 class="text-3xl font-bold mb-6">Create Custom Error using Try and Catch</h1>
+        </header>
+
+        <div class="mx-auto max-w-xs">
+            <form>
+                <div class="flex items-center mb-4">
+                    <input id="ageInput" type="text" placeholder="Enter age between 18-30" class="rounded outline-none border p-2 flex-1">
+                    <button onclick="checkAge()" type="button" class="ml-2 rounded px-4 py-2 bg-cyan-500 text-white hover:bg-rose-500 transition ease-in-out duration-300">
+                        Submit
+                    </button>
+                </div>
+                <p id="error" class="font-bold text-rose-500"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+function checkAge(){
+    const ageField = document.getElementById("ageInput");
+    const ageText = ageField.value;
+    const errorTag = document.getElementById("error")
+    try{
+        const age = parseInt (ageText);
+        if (isNaN(age)){
+            throw "Please enter a number";
+        } else if (age < 18){
+            throw "You cannot use Age under 18!"
+        } else if (age > 30){
+            throw "You cannot use Age which is above 30!"
+        }
+        errorTag.innerHTML = "";
+    }
+    catch (error) {
+        console.log ("ERROR : ", error);
+        errorTag.innerHTML = "ERROR : " + error;
+    }
+    finally {
+        console.log ("DONE : Try and Catch!")
+    }
+    console.log (404)
+}
+    </script>
+</body>
+</html>
