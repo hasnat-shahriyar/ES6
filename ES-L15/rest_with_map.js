@@ -1,7 +1,5 @@
 const argumentMetWork = (...para) => {
-    for (let i = 0; i < para.length; i++){
-        console.log(para[i]);
-    }
+    para.map(paramoy => console.log(paramoy));
 }
 
 
