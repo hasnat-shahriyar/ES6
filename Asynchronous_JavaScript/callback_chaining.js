@@ -1,4 +1,6 @@
 // Callback Chaining
+
+// Our Items
 let stocks = {
     Fruits: ['Strawberry 🍓', 'Grapes 🍇', 'Banana 🍌', 'Apple 🍎'],
     liquid : ["water 🌊", "ice 🍧"],
@@ -6,6 +8,7 @@ let stocks = {
     toppings : ["chocolate 🍫", "peanuts 🥜"],
 }
 
+// Order Fruit or flavour is selected
 const order = (Fruit_Name, callProduction) => {
     setTimeout(() => {
         console.log(`🍓 ${stocks.Fruits[Fruit_Name]} was selected as the fruit choice!`);
@@ -16,6 +19,8 @@ const order = (Fruit_Name, callProduction) => {
 
 // But this has become a callback hell. Isn't it?
 // So what is the solution for this? Ans: Use Promises
+
+// Now in production
 const production = () => {
     setTimeout(() => {
         console.log('🎰 Production has started!');
