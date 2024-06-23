@@ -7,7 +7,7 @@ const products = [
 ];
 
 const brandNames = products.map(nm => nm.brand).join(', ');
-console.log(brandNames);
+console.log('Brand Names: ', brandNames);
 const withPrice = products.map(cost => cost.price).join(', ');
 
 console.log(`Brand: ${brandNames}, Price: ${withPrice}`);
