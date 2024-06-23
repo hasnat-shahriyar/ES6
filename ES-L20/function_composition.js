@@ -1,16 +1,7 @@
-let one = (twoParam) => {
-    let num = 10;
-    let resultOne = num + twoParam;
-    return resultOne;
-}
+let one = (twoParam) => twoParam + 25;
+let two = (a, b) => a * b; 
 
-let two = (a, b) => {
-    let resultTwo = a + b;
-    return resultTwo;
-} 
+// Composed function
+let composedFunction = (x, y) => one(two(x, y));
 
-let resultFromTWo = two(5, 5);
-
-let finalResult = one(resultFromTWo);
-
-console.log(finalResult);
+console.log(composedFunction(5, 5));  // Output: 50
