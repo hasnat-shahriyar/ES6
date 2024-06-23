@@ -5,8 +5,8 @@ const bio = {
 };
 
 // Destructuring the bio object
-const { name, age, profession } = bio;
+const { name: nm, age, profession } = bio;
 
-console.log(name);       // Output: Nahin
+console.log(nm);       // Output: Nahin
 console.log(age);        // Output: 24
 console.log(profession); // Output: Student
