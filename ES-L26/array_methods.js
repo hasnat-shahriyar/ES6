@@ -30,8 +30,7 @@ Explanation:
 
 
 // Example using forEach to log each phone's color
-phones.forEach((phn) => console.log(phn.color)); 
-// It doesn't return anything so there's no reason to put in into a variable since it will only show undefine if we console log that variable
+phones.forEach((phn) => console.log(phn.color));  // It doesn't return anything so there's no reason to put in into a variable since it will only show undefine if we console log that variable
 /*
 Output:
 - "Black"
